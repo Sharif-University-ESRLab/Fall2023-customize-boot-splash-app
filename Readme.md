@@ -35,6 +35,32 @@ Finally, our main method lies in the function below where we rename the specifie
 
 ## How to Run
 
+
+#### Build and Run Project
+
+```bash
+  git clone https://github.com/Sharif-University-ESRLab/Fall2023-customize-boot-splash-app.git
+  cd Fall2023-customize-boot-splash-app.git/edk2
+  export FIRMWARE=./Build/OvmfX64/RELEASE_GCC5/FV/OVMF.fd
+  export DRIVE=./MdeModulePkg/Logo
+  mkdir -p $DRIVE
+  qemu-system-x86_64 -drive if=pflash,format=raw,readonly,file=Build/OvmfX64/RELEASE_GCC5/FV/OVMF_CODE.fd     -drive if=pflash,format=raw,file=Build/OvmfX64/RELEASE_GCC5/FV/OVMF_VARS.fd -drive file=fat:rw:$DRIVE  -net none
+  build --platform=OvmfPkg/OvmfPkgX64.dsc --arch=X64 --buildtarget=RELEASE --tagname=GCC5
+  qemu-system-x86_64 -drive if=pflash,format=raw,readonly,file=Build/OvmfX64/RELEASE_GCC5/FV/OVMF_CODE.fd     -drive if=pflash,format=raw,file=Build/OvmfX64/RELEASE_GCC5/FV/OVMF_VARS.fd -drive file=fat:rw:$DRIVE  -net none
+```
+
+Now in the qemu environment:
+
+```bash
+  fs0:
+  OurMess.efi
+  rename Logo prev.bmp
+  Rename cat1.bmp
+```
+Now build the program again.
+
+## Results
+
 ### Sample run of our method:
 
 ![step1](https://github.com/Sharif-University-ESRLab/Fall2023-customize-boot-splash-app/assets/135590004/5452d153-0ced-4773-9cdb-26b1e686bbfc)
@@ -45,45 +71,13 @@ Finally, our main method lies in the function below where we rename the specifie
 
 ![RUN VIDEO](https://github.com/Sharif-University-ESRLab/Fall2023-customize-boot-splash-app/assets/135590004/56244a82-a428-4193-882e-00f67eef2d71)
 
-
-#### Build Project
-
-```bash
-  git clone https://github.com/Sharif-University-ESRLab/Fall2023-customize-boot-splash-app.git
-  export FIRMWARE=./Build/OvmfX64/RELEASE_GCC5/FV/OVMF.fd
-  export DRIVE=./MdeModulePkg/Logo
-  mkdir -p $DRIVE
-  qemu-system-x86_64 -drive if=pflash,format=raw,readonly,file=Build/OvmfX64/RELEASE_GCC5/FV/OVMF_CODE.fd     -drive if=pflash,format=raw,file=Build/OvmfX64/RELEASE_GCC5/FV/OVMF_VARS.fd -drive file=fat:rw:$DRIVE  -net none
-  build --platform=OvmfPkg/OvmfPkgX64.dsc --arch=X64 --buildtarget=RELEASE --tagname=GCC5
-  qemu-system-x86_64 -drive if=pflash,format=raw,readonly,file=Build/OvmfX64/RELEASE_GCC5/FV/OVMF_CODE.fd     -drive if=pflash,format=raw,file=Build/OvmfX64/RELEASE_GCC5/FV/OVMF_VARS.fd -drive file=fat:rw:$DRIVE  -net none
-```
-
-#### Run server
-Your text comes here
-```bash
-  pyhton server.py -p 8080
-```
-
-| Parameter | Type     | Description                |
-| :-------- | :------- | :------------------------- |
-| `-p` | `int` | **Required**. Server port |
-
-
-
-## Results
-In this section, you should present your results and provide an explanation for them.
-
-Using image is required.
+As explained, now that we rebuild the program, it starts with a new boot splash image.
 
 ## Related Links
-Some links related to your project come here.
  - [EDK II](https://github.com/tianocore/edk2)
- - [ESP32 Pinout](https://randomnerdtutorials.com/esp32-pinout-reference-gpios/)
- - [Django Doc](https://docs.djangoproject.com/en/5.0/)
 
 
 ## Authors
-Authors and their github link come here.
-- [@Author1](https://github.com/Sharif-University-ESRLab)
-- [@Author2](https://github.com/Sharif-University-ESRLab)
+- [@SogandSalehi]([https://github.com/noonedoingnothing])
+- [@MahdiShafiee]([https://github.com/mahdi-shafee])
 
