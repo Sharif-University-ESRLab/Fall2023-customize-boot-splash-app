@@ -21,11 +21,33 @@ In our main loop, we check the user input. Depending on the command "rename Logo
 
 We have some helper functions in order to achieve this goal. 
 
+The function below handles how we get the input from the user. We consider the buffer's content and its size to parse the result.
+
+![getinput](https://github.com/Sharif-University-ESRLab/Fall2023-customize-boot-splash-app/assets/135590004/f43ac787-e0c7-4914-91db-af7b521cb0d3)
+
+Here we print the options for the user. This way the user can check what options they have to choose from and what name to choose for the previous logo.
+
+![printoptions](https://github.com/Sharif-University-ESRLab/Fall2023-customize-boot-splash-app/assets/135590004/e1c36cb2-a32c-4026-9431-b4cb509e6f47)
+
+Finally, our main method lies in the function below where we rename the specified files to the given paths. (further details in the code folder)
+
+![rename](https://github.com/Sharif-University-ESRLab/Fall2023-customize-boot-splash-app/assets/135590004/97715144-6448-4c92-af35-afdbafa769ba)
+
 ## How to Run
+
 
 In this part, you should provide instructions on how to run your project. Also if your project requires any prerequisites, mention them. 
 
 #### Examples:
+Sample run of our method:
+![step1](https://github.com/Sharif-University-ESRLab/Fall2023-customize-boot-splash-app/assets/135590004/5452d153-0ced-4773-9cdb-26b1e686bbfc)
+![step2](https://github.com/Sharif-University-ESRLab/Fall2023-customize-boot-splash-app/assets/135590004/499f172c-8bd8-4cae-b1bf-d6958880b8fc)
+![step3](https://github.com/Sharif-University-ESRLab/Fall2023-customize-boot-splash-app/assets/135590004/2b75a28c-01ed-4810-8a93-9daa09b492ab)
+![step4](https://github.com/Sharif-University-ESRLab/Fall2023-customize-boot-splash-app/assets/135590004/36719d3e-3b19-4077-8d07-0d08ba068723)
+![step5](https://github.com/Sharif-University-ESRLab/Fall2023-customize-boot-splash-app/assets/135590004/2a64d9f3-a968-437e-b120-de14c03cb194)
+![step6](https://github.com/Sharif-University-ESRLab/Fall2023-customize-boot-splash-app/assets/135590004/56244a82-a428-4193-882e-00f67eef2d71)
+
+
 #### Build Project
 Your text comes here
 ```bash
