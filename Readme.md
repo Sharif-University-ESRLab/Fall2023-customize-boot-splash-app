@@ -1,5 +1,4 @@
-
-![Logo](https://via.placeholder.com/468x150?text=Your+Logo+Here)
+![Logo](https://github.com/Sharif-University-ESRLab/Fall2023-customize-boot-splash-app/assets/135590004/4662d134-bd0c-42e0-ac94-af1a174c5f0c)
 
 
 
