@@ -78,6 +78,6 @@ As explained, now that we rebuild the program, it starts with a new boot splash 
 
 
 ## Authors
-- [@SogandSalehi]([https://github.com/noonedoingnothing])
-- [@MahdiShafiee]([https://github.com/mahdi-shafee])
+- ![@SogandSalehi](https://github.com/noonedoingnothing)
+- ![@MahdiShafiee](https://github.com/mahdi-shafee)
 
