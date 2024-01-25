@@ -35,23 +35,27 @@ Finally, our main method lies in the function below where we rename the specifie
 
 ## How to Run
 
+### Sample run of our method:
 
-In this part, you should provide instructions on how to run your project. Also if your project requires any prerequisites, mention them. 
-
-#### Examples:
-Sample run of our method:
 ![step1](https://github.com/Sharif-University-ESRLab/Fall2023-customize-boot-splash-app/assets/135590004/5452d153-0ced-4773-9cdb-26b1e686bbfc)
 ![step2](https://github.com/Sharif-University-ESRLab/Fall2023-customize-boot-splash-app/assets/135590004/499f172c-8bd8-4cae-b1bf-d6958880b8fc)
 ![step3](https://github.com/Sharif-University-ESRLab/Fall2023-customize-boot-splash-app/assets/135590004/2b75a28c-01ed-4810-8a93-9daa09b492ab)
 ![step4](https://github.com/Sharif-University-ESRLab/Fall2023-customize-boot-splash-app/assets/135590004/36719d3e-3b19-4077-8d07-0d08ba068723)
 ![step5](https://github.com/Sharif-University-ESRLab/Fall2023-customize-boot-splash-app/assets/135590004/2a64d9f3-a968-437e-b120-de14c03cb194)
-![step6](https://github.com/Sharif-University-ESRLab/Fall2023-customize-boot-splash-app/assets/135590004/56244a82-a428-4193-882e-00f67eef2d71)
+
+![RUN VIDEO](https://github.com/Sharif-University-ESRLab/Fall2023-customize-boot-splash-app/assets/135590004/56244a82-a428-4193-882e-00f67eef2d71)
 
 
 #### Build Project
-Your text comes here
+
 ```bash
+  git clone https://github.com/Sharif-University-ESRLab/Fall2023-customize-boot-splash-app.git
+  export FIRMWARE=./Build/OvmfX64/RELEASE_GCC5/FV/OVMF.fd
+  export DRIVE=./MdeModulePkg/Logo
+  mkdir -p $DRIVE
+  qemu-system-x86_64 -drive if=pflash,format=raw,readonly,file=Build/OvmfX64/RELEASE_GCC5/FV/OVMF_CODE.fd     -drive if=pflash,format=raw,file=Build/OvmfX64/RELEASE_GCC5/FV/OVMF_VARS.fd -drive file=fat:rw:$DRIVE  -net none
   build --platform=OvmfPkg/OvmfPkgX64.dsc --arch=X64 --buildtarget=RELEASE --tagname=GCC5
+  qemu-system-x86_64 -drive if=pflash,format=raw,readonly,file=Build/OvmfX64/RELEASE_GCC5/FV/OVMF_CODE.fd     -drive if=pflash,format=raw,file=Build/OvmfX64/RELEASE_GCC5/FV/OVMF_VARS.fd -drive file=fat:rw:$DRIVE  -net none
 ```
 
 #### Run server
