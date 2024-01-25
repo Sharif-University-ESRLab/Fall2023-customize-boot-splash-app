@@ -1,5 +1,5 @@
-
 ![Logo](https://github.com/Sharif-University-ESRLab/Fall2023-customize-boot-splash-app/assets/135590004/d60ad01b-e5f0-471b-8ae7-e089b127e924)
+![Screenshot from 2024-01-25 14-12-28](https://github.com/Sharif-University-ESRLab/Fall2023-customize-boot-splash-app/assets/135590004/caf828f0-2d42-4c35-971a-55c867916659)
 
 
 # Customize Bootsplash Image
