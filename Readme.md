@@ -1,27 +1,25 @@
-![Logo](https://github.com/Sharif-University-ESRLab/Fall2023-customize-boot-splash-app/assets/135590004/4662d134-bd0c-42e0-ac94-af1a174c5f0c)
+
+![Logo](https://github.com/Sharif-University-ESRLab/Fall2023-customize-boot-splash-app/assets/135590004/d60ad01b-e5f0-471b-8ae7-e089b127e924)
 
 
+# Customize Bootsplash Image
 
-# Project Title
-
-A brief description of what this project does and who it's for comes here.
-
+This is an application written in UEFI that takes a path from user and updates the bootsplash logo.
 
 ## Tools
-In this section, you should mention the hardware or simulators utilized in your project.
 - Qemu
-- Gem5
-- ESP32
-- Raspberry Pi 3B
-- Temperature Sensor
+- UEFI
+- EDK2
+- ImageMagick
 
 
 ## Implementation Details
 
-In this section, you will explain how you completed your project. It is recommended to use pictures to demonstrate your system model and implementation.
+In our main loop, we check the user input. Depending on the command "rename Logo \*new_path\*" or "Rename \*new_logo_path\*" we either change the current Logo to the new path the user provides or create the new specified Logo. It's important to note that the user must first change the current Logo to a checkpoint they decide on before choosing a new logo. We decided to give the user the freedom to choose the checkpoint's name so that they have more control over the process and can change the logo to the original logo if needed.
 
+![main-loop](https://github.com/Sharif-University-ESRLab/Fall2023-customize-boot-splash-app/assets/135590004/76323a97-2da8-4154-8a34-6849f0c2351f)
 
-Feel free to use sub-topics for your projects. If your project consists of multiple parts (e.g. server, client, and embedded device), create a separate topic for each one.
+We have some helper functions in order to achieve this goal. 
 
 ## How to Run
 
