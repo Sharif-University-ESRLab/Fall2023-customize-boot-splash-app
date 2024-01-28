@@ -1,0 +1,13 @@
+[Defines]
+
+  DEC_SPECIFICATION              = 0x00010005
+
+  PACKAGE_NAME                   = OurMessPkg
+
+  PACKAGE_GUID                   = a1fc00e6-6e44-4d57-9f75-63048b2976c3
+
+  PACKAGE_VERSION                = 0.0.1
+
+[Includes]
+
+  Include
