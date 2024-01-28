@@ -73,7 +73,7 @@ Now build the program again.
 ![step4](https://github.com/Sharif-University-ESRLab/Fall2023-customize-boot-splash-app/assets/135590004/36719d3e-3b19-4077-8d07-0d08ba068723)
 ![step5](https://github.com/Sharif-University-ESRLab/Fall2023-customize-boot-splash-app/assets/135590004/2a64d9f3-a968-437e-b120-de14c03cb194)
 
-![RUN VIDEO](https://github.com/Sharif-University-ESRLab/Fall2023-customize-boot-splash-app/assets/135590004/56244a82-a428-4193-882e-00f67eef2d71)
+[RUN VIDEO](https://github.com/Sharif-University-ESRLab/Fall2023-customize-boot-splash-app/assets/135590004/56244a82-a428-4193-882e-00f67eef2d71)
 
 As explained, now that we rebuild the program, it starts with a new boot splash image.
 
@@ -82,6 +82,6 @@ As explained, now that we rebuild the program, it starts with a new boot splash 
 
 
 ## Authors
-- ![@SogandSalehi](https://github.com/noonedoingnothing)
-- ![@MahdiShafiee](https://github.com/mahdi-shafee)
+- [@SogandSalehi](https://github.com/noonedoingnothing)
+- [@MahdiShafiee](https://github.com/mahdi-shafee)
 
