@@ -38,9 +38,10 @@ Finally, our main method lies in the function below where we rename the specifie
 
 #### Build and Run Project
 
+First, download the zip file from the provided link in the Code section. Then:
+
 ```bash
-  git clone https://github.com/Sharif-University-ESRLab/Fall2023-customize-boot-splash-app.git
-  cd Fall2023-customize-boot-splash-app.git/edk2
+  cd edk2
   export FIRMWARE=./Build/OvmfX64/RELEASE_GCC5/FV/OVMF.fd
   export DRIVE=./MdeModulePkg/Logo
   mkdir -p $DRIVE
