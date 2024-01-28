@@ -38,15 +38,13 @@ Finally, our main method lies in the function below where we rename the specifie
 
 #### Build and Run Project
 
-First, download the zip file from the provided link in the Code section. Then:
+First, download the zip file from the provided link in the Code section and unzip it. Then:
 
 ```bash
   cd edk2
   export FIRMWARE=./Build/OvmfX64/RELEASE_GCC5/FV/OVMF.fd
   export DRIVE=./MdeModulePkg/Logo
   mkdir -p $DRIVE
-  qemu-system-x86_64 -drive if=pflash,format=raw,readonly,file=Build/OvmfX64/RELEASE_GCC5/FV/OVMF_CODE.fd     -drive if=pflash,format=raw,file=Build/OvmfX64/RELEASE_GCC5/FV/OVMF_VARS.fd -drive file=fat:rw:$DRIVE  -net none
-  build --platform=OvmfPkg/OvmfPkgX64.dsc --arch=X64 --buildtarget=RELEASE --tagname=GCC5
   qemu-system-x86_64 -drive if=pflash,format=raw,readonly,file=Build/OvmfX64/RELEASE_GCC5/FV/OVMF_CODE.fd     -drive if=pflash,format=raw,file=Build/OvmfX64/RELEASE_GCC5/FV/OVMF_VARS.fd -drive file=fat:rw:$DRIVE  -net none
 ```
 
@@ -59,6 +57,11 @@ Now in the qemu environment:
   Rename cat1.bmp
 ```
 Now build the program again.
+
+```bash
+  build --platform=OvmfPkg/OvmfPkgX64.dsc --arch=X64 --buildtarget=RELEASE --tagname=GCC5
+  qemu-system-x86_64 -drive if=pflash,format=raw,readonly,file=Build/OvmfX64/RELEASE_GCC5/FV/OVMF_CODE.fd     -drive if=pflash,format=raw,file=Build/OvmfX64/RELEASE_GCC5/FV/OVMF_VARS.fd -drive file=fat:rw:$DRIVE  -net none
+```
 
 ## Results
 
